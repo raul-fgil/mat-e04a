@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <title>Flexbox</title>
+</head>
+    <style>
+        .flex-container{
+            display: flex;
+            justify-content:center; /*LEFT TO RIGHT*/
+            align-items: center; /*TOP TO BOTTOM*/
+            text-align: center;
+            height: 70vh;
+            background-color:lightsalmon
+        }
+        .flex-item-1{
+            flex-grow:1;
+            background-color: lightgreen;
+        }
+        .flex-item-2{
+            flex-grow:1;
+            background-color: lightpink;
+        }
+        .flex-item-3{
+            flex-grow:1;
+            background-color: lightgrey;
+        }
+    </style>
+<body>
+    <section id="product-information">
+        <div class="flex-container">
+            <div class= "flex-item-1">
+                Hello, left side
+            </div>
+            <div class="flex-item-2">
+                Hello, middle side
+            </div>
+            <div class="flex-item-3">
+                Hello, right side
+            </div>
+        </div>
+    </section>
+</body>
+</html>

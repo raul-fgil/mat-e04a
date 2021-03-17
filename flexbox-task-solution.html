@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task 3</title>
+    <style>
+        .flex-container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flex-container > div {
+            text-align: center;
+            margin: 5px;
+            padding: 10px;
+        }
+        .flex-item-1{
+            flex-grow: 1;
+            background-color: lightgray;
+        }
+        .flex-item-2{
+            flex-grow: 2;
+            background-color: red;
+        }
+        .flex-item-3{
+            flex: 2;
+            padding: 5px 50px;
+            background-color: lightgray;
+        }
+        img{
+            border: 15px solid lightskyblue;
+        }
+        .background-lightblue{
+            background-color: lightskyblue;
+            padding: 10px;
+            text-align: center;
+        }
+        @media (max-width:580px){                   /* MOBILE MEDIA QUERY*/
+            
+            .flex-container{
+                background-color: white;
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+            img{
+                border: 15px solid green;
+                width: 100%;
+                height: auto;
+                margin-left: -15px;
+            }
+            .flex-item-1, .flex-item-2, .flex-item-3{
+                width:100%;
+                background-color: lightblue;
+                margin: 0 10px;
+            }
+            .flex-item-2{
+                background-color: blue;
+            }
+        
+        }
+    </style>
+</head>
+<body>
+    <div id="flex-container-1" class="flex-container">          <!-- parent flex-->
+        <div class="flex-item-1">element1</div>                 <!-- LEFT SIDE-->
+        <div class="flex-item-2">element2</div>                 <!-- MIDDLE SIDE-->
+        <div class="flex-item-1">element3</div>                 <!-- RIGHT SIDE-->
+    </div>
+​
+    <div id="flex-container-2" class="flex-container">          <!-- parent flex-->
+        <div class="flex-item-1">element 1</div>                <!-- LEFT SIDE-->
+        <div class="flex-item-1">element 1</div>                <!-- RIGHT SIDE-->
+    </div>
+​
+    <div id="flex-container-3" class="flex-container">          <!-- parent flex-->
+        <div class="flex-item-3">                               <!-- LEFT SIDE-->
+            <div class="flex-container">                        <!-- sub flex-->
+                <div class="flex-item-3">                       <!-- LEFT LEFT SIDE-->
+                    <img src="https://www.worldofsweets.de/out/pictures/master/product/1/haribo-rainbow-sauer-175g-no1-0440.jpg" alt="haribo" width="500px" height="500px" >
+                </div>
+                <div class="flex-item-3">                       <!-- LEFT RIGHT SIDE-->
+                    <div class="background-lightblue">Information</div> 
+                </div>
+            </div>
+        </div>
+        <div class="flex-item-3">                                <!-- RIGHT SIDE-->
+            Element 2
+        </div>
+    </div>
+​
+</body>
+</html>
+
+
+
+
+

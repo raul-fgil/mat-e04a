@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Task 2</title>
+<style>
+    body{
+        margin: 10px 20px;
+    }
+    .erste-div{
+        font-size: 26px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+        text-transform: uppercase;
+    }
+    .erste-paragraph{
+        text-decoration: underline;
+        font-size: 18px;
+        letter-spacing: 5px;   
+    }
+    button{
+        background-color: grey;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 28px;
+    }
+    button:hover{
+        background-color: pink;
+        padding: 15px;
+        font-size: 32px;
+    }
+    .navigation-bar-bottom ul{
+        list-style-type: none;
+        text-align: center;
+    }
+    .navigation-bar-bottom ul li{
+        display:inline-block
+    }
+    .navigation-bar-bottom ul li a{
+        background-color: grey;
+        color: white;
+        border-radius: 10px;
+        padding: 20px;   
+    }
+    .navigation-bar-bottom ul li a{
+        text-decoration: none;
+    }
+    .navigation-bar-bottom ul li a:hover{
+        background-color: pink;
+    }
+    .tbottom{
+        text-align: center;
+        width: 20%;
+        height: auto;
+        margin: 50px auto;
+        font-size: 1.5 rem;
+        border-collapse: collapse;
+    }
+    th, tr{
+        border: 2px solid black;
+        padding:6px;
+    }
+    .theading1{
+        background-color: green;
+    }
+</head>
+</style>
+<body>
+    <section class="erste-div">
+        <div>
+            <p> Hier ist das erste div</p>
+        </div>
+    </section>
+    <br><br>
+    <section class="erste-paragraph">
+        <div>
+            <p>Hier ist der erste paragraph</p>
+        </div>
+    </section>
+    <br><br>
+    <section id="button-clickable">
+        <button> Click me!</button>
+    </section>
+    <br><br>
+    <section class="navigation-bar-bottom">
+        <ul>
+            <li>
+                <a href="https://www.google.com">Erster</a>
+            </li>
+            <li>
+                <a href="https://www.google.com">Zweiter</a>
+            </li>
+            <li>
+                <a href="https://www.google.com">Dritter</a>
+            </li>
+            <li>
+                <a href="https://www.google.com">Vierter</a>
+            </li>
+        </ul>
+    </section>
+    <br><br>
+    <section>
+        <table class="tbottom">
+            <tr class=theading1>
+                <th>Eins</th>
+                <th>Zwei</th>
+            </tr>
+            <tr>
+                <th>1.</th>
+                <th>2.</th>
+            </tr>
+        </table>
+    </section>
+</html>

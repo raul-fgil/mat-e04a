@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    background-color: white;
+    }
+</style>
+<body>
+    <form>
+        <section>
+        <label for="heading"> Ware </label>
+        <br>
+        <ul>
+            <li>
+               <label for="teddy-bear"> Plüsch Teddybär</label>
+               <input type="number" placeholder="0">
+            </li>
+            <li>
+                <label for="number"> Sofakissen "Sonnenblume" </label>
+                <input type="number" placeholder="0">
+            </li>
+        </ul>
+        </section>
+
+        <section>
+        <p> Bezahlung</p>
+        <label for="Art der Bezahlung"> Art der Bezahlung </label>
+            <select name="Art der Bezahlung">
+                <option value="American Express Card">American Express Card</option>
+                <option value="Klarna">Klarna</option>
+                <option value="PayPal">PayPal</option>
+                <option value="Kreditkarte">Kreditkarte</option>
+            </select>
+        </section>
+        <br><br>
+        <input type="checkbox" name="Quittung per E-mail an folgende Adresse">
+        <label for="checkbox"> Quittung per E-mail an folgende Adresse</label>
+        <input type="text" placeholder="...@...">
+        <br><br>
+        <p>Versand</p>
+        <p>Lieferanschrift</p>
+        <ul>
+            <li>
+                <label for="Name">Name</label>
+                <input type="text">
+            </li>
+            <li>
+                <label for="Anschrift">Anschrift</label>
+                <input type="text">
+            </li>
+            <li>
+                <label for="PLZ">PLZ</label>
+                <input type="text">
+                <label for="Ort">Ort</label>
+                <input type="text">
+            </li>
+        </ul>
+        <p>Rechnungsanschrift</p>
+        <ul>
+            <li>
+                <label for="Name">Name</label>
+                <input type="text">
+            </li>
+            <li>
+                <label for="Anschrift">Anschrift</label>
+                <input type="text">
+            </li>
+            <li>
+                <label for="PlZ">PLZ</label>
+                <input type="text">
+                <label for="Ort"></label>
+                <input type="text">
+            </li>
+        </ul>
+        <p>Zusatz</p>
+        <label for="Ihre Nachricht an uns">Ihre Nachricht an uns</label>
+        <textarea cols="20" rows="6" maxlength="15"></textarea>
+        <br><br>
+        <input type="submit" value="Register Now">
+    </form>
+</body>
+</html>

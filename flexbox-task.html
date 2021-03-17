@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+    <title>Flexbox</title>
+</head>
+    <style>
+        .flex-container{
+            display: flex;
+            justify-content: space-around; /*LEFT TO RIGHT*/
+            align-items: center; /*TOP TO BOTTOM*/
+            text-align: center;
+            background-color:white    
+        }
+            .flex-item-1{
+                flex-grow:1;
+                background-color: lightgrey;
+                margin: 5px;
+                padding: 10px;
+            }
+            .flex-item-2{
+                flex-grow:2;
+                background-color: red;
+                margin: 5px;
+                padding: 10px;
+            }
+            .flex-item-3{
+                flex-grow:1;
+                background-color: lightgrey;
+                margin: 5px;
+                padding:10px;
+            }
+        .flex-container-2{
+            display: flex;
+            justify-content:space-around; 
+            align-items: center; 
+            text-align: center;
+            background-color:white;  
+        }
+            .flex-item-4{
+                flex-grow:1;
+                background-color: lightgray;
+                margin: 5px;
+                padding: 10px;
+            }
+            .flex-item-5{
+                flex-grow:1;
+                background-color: lightgray;
+                margin: 5px;
+                padding: 10px;
+            }
+        .flex-container-3{
+            display: flex;
+
+            justify-content:space-around;
+            align-items: center; 
+            align-content: space-evenly;
+            text-align: center;
+            background-color:white;
+        }
+            .sub-flex{
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                margin: 5px
+            }
+            .flex-item-6{
+                flex:1;
+                background-color: lightgray;
+                padding: 10px;
+                margin: 5px;
+            }
+                    .button{
+                    border-radius: 20px;
+                    padding: 10px;
+                    background-color: grey;
+                    }
+                    .button a{
+                    text-decoration: none;
+                    color:white;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 10px;
+                    }
+                    .button a:hover{
+                    font-size: 15px;
+                    border-radius: 20px;
+                    }
+                    .image{
+                    border: solid 10px lightblue;
+                    margin: 5px;
+                    }
+            .flex-item-7{
+                flex:1;
+                background-color: lightgray;
+                margin: 10px;
+                padding: 10px;
+            }
+            @media (max-width:580){
+                body{
+                margin:15px;
+            }
+            .flex-container{
+                background-color: darkgray;
+                flex-direction: column-reverse;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+            .flex-item-1, .flex-item-2, .flex-item-3{
+                width:100%;
+                background-color: lightgrey; }
+                }
+    </style>
+<body>
+    <section id="product-information">
+        <div class="flex-container">
+            <div class= "flex-item-1">
+                Ein Element
+            </div>
+            <div class="flex-item-2">
+                Ein Element
+            </div>
+            <div class="flex-item-3">
+                Ein Element
+            </div>
+        </div>
+    </section>
+    <section id= "about info">
+        <div class="flex-container-2">
+            <div class="flex-item-4">
+                Ein Element
+            </div>
+            <div class="flex-item-5">
+                Ein Element
+            </div>
+        </div>
+    </section>
+    <section id= "product list">
+        <div class="flex-container-3">
+            <div class="flex-item-6">
+                <div class="sub-flex">
+                <img class="image" src="https://www.worldofsweets.de/out/pictures/master/product/1/haribo-rainbow-sauer-175g-no1-0440.jpg" alt="Haribo" width="500" height="500">
+                <button class="button"><a href="https://www.haribo.com/de-de/produkte/haribo/rainbow-sauer" target="_blank"> Informationen</a></button>
+                </div>
+            </div>
+            <div class="flex-item-7">
+                Ein Element
+            </div>
+        </div>
+    </section>
+</body>
+</html>
